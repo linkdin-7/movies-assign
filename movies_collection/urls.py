@@ -20,5 +20,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('movielist.urls')),
     path('',include('identity.urls')),
-
 ]
