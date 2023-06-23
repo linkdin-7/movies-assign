@@ -57,7 +57,7 @@ It also allows users to create multiple collection of movies while keeping a tra
 ## Register the app
 ![Register_paylo](https://github.com/linkdin-7/movies-assign/assets/56730903/ac04fa79-11c1-4cbd-bdba-00d5d6a23aad)
 
-# Register Successfully(Get the Access Token)
+## Register Successfully(Get the Access Token)
 ![Register_suc](https://github.com/linkdin-7/movies-assign/assets/56730903/234f57dd-f4ba-4353-bc38-763906485a10)
 
 ## Get list of movies
