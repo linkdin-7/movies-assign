@@ -3,12 +3,10 @@ from  movielist.models import RequestCount
 
 class RequestCountMiddleware:
     '''
-    Request Count Middleware to Count the Number of Request made to all the Api
-    to the server
+    To Count the Number of Request made to all the Api
     '''
     def __init__(self, get_response):
         self.get_response = get_response
-        # One-time configuration and initialization.
 
     def __call__(self, request):
 
