@@ -53,6 +53,34 @@ class TestViews:
         assert len(data["results"]) == 10
 
 
+@pytest.mark.django_db
+def test_collection_create(user_token):
+    '''
+    Testing the Collection  
+    '''
+    user= User.objects.create_user(username="test_new", password="passtest")
+    movies_payload = [
+        dict(
+            title = "movie_title",
+            description = "movie_description",
+            genres = "movie_genres",
+            uuid = "4cac8453-a512-4bde-b79d-e2f5bc897a5f"
+        )
+    ]
+
+    collection_payload = dict(
+        title = "collection_title",
+        description = "collection_description",
+        movies = movies_payload,
+        username = user.id
+    )
+
+    response = client.post("/collection/", collection_payload, HTTP_AUTHORIZATION=f"Bearer {user_token}",format='json')
+
+    assert response.status_code == 201
+    assert 'collection_uuid' in response.data
+
+
 '''
 Testing the Request Count 
 '''
