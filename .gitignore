@@ -1,0 +1,12 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# dotenv
+.env
+
+
+# vscode env
+.vscode/
+
+#folder_to_ignore/
+pictures/
