@@ -3,17 +3,11 @@ This App integrates with a third-party movie API to serve a paginated list of mo
 Using the REST APIs of the users can view the movie details and add them to their collections.
 It also allows users to create multiple collection of movies while keeping a track of top 3 genres present across the collections owned by each user.
 
-
-## Technologies
-
-- **Django Web Framework** - Django is a back-end server side web framework. Django is free, open source and written in Python.
-- **Django Rest Framework** - Django Rest Framework is a powerful and flexible toolkit for building Web APIs
-
 ## Setup and Installation
 
 1. Clone the project.
     ```
-    git clone 
+    git clone https://github.com/linkdin-7/movies-assign.git
     ```
 
 2. Run virtual environment in the root folder
