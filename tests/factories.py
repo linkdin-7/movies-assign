@@ -10,16 +10,6 @@ class RegisterFactory(DjangoModelFactory):
         model = User
     username = "New2"
     password = "Tech@1234"
-
-
-'''
-Collection Factory
-'''
-class CollectionFactory(DjangoModelFactory):
-    class Meta:
-        model = Collection
-    title = "New Collection"
-    description ="Creating a Collection"
     
 '''
 Movie Factory
@@ -31,4 +21,16 @@ class MovieFactory(DjangoModelFactory):
     title = "Swing"
     description ="New Movie"
     genres = "Action,Thriller"
-    collection = factory.SubFactory(CollectionFactory)
+    
+
+'''
+Collection Factory
+'''
+class CollectionFactory(DjangoModelFactory):
+    class Meta:
+        model = Collection
+    title = "New Collection"
+    description ="Creating a Collection"
+    user = factory.SubFactory(RegisterFactory)
+    movies = factory.RelatedFactory(MovieFactory)
+    
