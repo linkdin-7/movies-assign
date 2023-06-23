@@ -1,6 +1,6 @@
 ## Overview
 This App integrates with a third-party movie API to serve a paginated list of movies and their respective genres.
-Using the REST APIs of the users can view the movie details and add them to their collections.
+Using the REST API's of the users can view the movie details and add them to their collections.
 It also allows users to create multiple collection of movies while keeping a track of top 3 genres present across the collections owned by each user.
 
 ## Setup and Installation
