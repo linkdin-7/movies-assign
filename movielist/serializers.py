@@ -4,7 +4,6 @@ from .models import Movie,Collection
 from drf_writable_nested.serializers import WritableNestedModelSerializer
 
 
-
 '''
 Serializer for Movie
 '''
