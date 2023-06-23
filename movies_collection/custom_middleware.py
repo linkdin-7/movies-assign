@@ -21,7 +21,6 @@ class RequestCountMiddleware:
             obj.save()
 
         response = self.get_response(request)
-
         return response
 
 
