@@ -5,7 +5,6 @@ from django.contrib.auth.hashers import make_password
 
 '''
 Serializer for User Data
-
 '''
 class UserSerializer(serializers.ModelSerializer):
     token = serializers.SerializerMethodField()
